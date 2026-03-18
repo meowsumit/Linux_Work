@@ -1,0 +1,14 @@
+#!/bin/bash
+
+myArray=( 1 20 30.5 hello "meow") 
+
+
+echo "all values in the array ${myArray[*]}" 
+echo "${myArray[1]}"
+
+echo "all values in the array ${#myArray[*]}"
+echo "values from index 2-3 is ${myArray[*]:2:2}"
+#Updating new array
+myArray+=(NEW 20 30.33)
+echo "all values in the array new ${myArray[*]}" 
+ 
